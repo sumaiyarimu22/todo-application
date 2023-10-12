@@ -9,7 +9,7 @@
     {
       "id": 2,
       "text": "Learn Modern ES6+ JavaScript",
-      "completed": true,
+      "completed": false,
       "color": "red"
     },
     {
@@ -42,8 +42,9 @@
     },
     {
       "text": "Test",
-      "completed": false,
-      "id": 8
+      "completed": true,
+      "id": 8,
+      "color": "red"
     },
     {
       "text": "hdjhdjhdjsdh",
@@ -53,7 +54,8 @@
     {
       "text": "fghfghfh",
       "completed": false,
-      "id": 10
+      "id": 10,
+      "color": "yellow"
     }
   ]
 }
