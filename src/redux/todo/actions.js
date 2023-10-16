@@ -1,19 +1,11 @@
 import {
-  LOADED,
   ADDED,
-  ALLCOMPLETED,
-  CLEARCOMPLETED,
+  TOGGLED,
   COLORSELECTED,
   DELETED,
-  TOGGLED,
+  ALLCOMPELETED,
+  CLEARCOMPELETED,
 } from "./actionTypes";
-
-export const loaded = (todos) => {
-  return {
-    type: LOADED,
-    payload: todos,
-  };
-};
 
 export const added = (todoText) => {
   return {
@@ -29,10 +21,13 @@ export const toggled = (todoId) => {
   };
 };
 
-export const colorSelected = (todoId, color) => {
+export const colorCelected = (todoId, color) => {
   return {
     type: COLORSELECTED,
-    payload: { todoId, color },
+    payload: {
+      todoId,
+      color,
+    },
   };
 };
 
@@ -43,14 +38,14 @@ export const deleted = (todoId) => {
   };
 };
 
-export const allCompleted = () => {
+export const allCompeleted = () => {
   return {
-    type: ALLCOMPLETED,
+    type: ALLCOMPELETED,
   };
 };
 
-export const clearCompleted = () => {
+export const clearCompeleted = () => {
   return {
-    type: CLEARCOMPLETED,
+    type: CLEARCOMPELETED,
   };
 };
