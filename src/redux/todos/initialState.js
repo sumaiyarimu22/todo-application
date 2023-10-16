@@ -1,13 +1,14 @@
 const initialState = [
   {
     id: 1,
-    todo: "create something",
+    text: "create something",
     compeleted: true,
   },
   {
     id: 2,
-    todo: "create nothing",
+    text: "create nothing",
     compeleted: false,
+    color: "red",
   },
 ];
 export default initialState;
