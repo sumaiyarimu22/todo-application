@@ -1,4 +1,4 @@
-export const initialState = [
+const initialState = [
   {
     id: 1,
     todo: "create something",
@@ -10,3 +10,4 @@ export const initialState = [
     compeleted: false,
   },
 ];
+export default initialState;

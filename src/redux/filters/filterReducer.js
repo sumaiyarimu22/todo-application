@@ -1,6 +1,6 @@
 /* eslint-disable no-case-declarations */
 import { STATUSCHANGED, COLORCHANGED } from "./actionTypes";
-import { initialState } from "./initialState";
+import initialState from "./initialState";
 
 const reduce = (state = initialState, action) => {
   switch (action.type) {

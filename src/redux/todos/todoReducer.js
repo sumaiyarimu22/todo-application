@@ -1,5 +1,5 @@
 /* eslint-disable no-case-declarations */
-import { initialState } from "./initialState";
+import initialState from "./initialState";
 import {
   ADDED,
   TOGGLED,
