@@ -9,6 +9,7 @@ const reduce = (state = initialState, action) => {
         ...state,
         status: action.payload,
       };
+
     case COLORCHANGED:
       const { color, changeType } = action.payload;
       switch (changeType) {
