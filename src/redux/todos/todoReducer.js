@@ -10,7 +10,7 @@ import {
 } from "./actionTypes";
 
 const nextTodoId = (todos) => {
-  const maxId = todos.reduce((maxId, todo) => Math.max(maxId, todo.id), -1);
+  const maxId = todos.reduce((maxId, todo) => Math.max(todo.id, maxId), -1);
   return maxId + 1;
 };
 
@@ -57,14 +57,12 @@ const reducer = (state = initialState, action) => {
       return state.filter((todo) => todo.id !== action.payload);
 
     case ALLCOMPELETED:
-      return [
-        state.map((todo) => {
-          return {
-            ...todo,
-            compeleted: true,
-          };
-        }),
-      ];
+      return state.map((todo) => {
+        return {
+          ...todo,
+          compeleted: true,
+        };
+      });
 
     case CLEARCOMPELETED:
       return state.filter((todo) => !todo.compeleted);
